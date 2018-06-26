@@ -29,7 +29,7 @@ if (isset($_POST['hard']))
        }
 if (isset($_POST['tutorial']))          
     {                       
-        echo' <META HTTP-EQUIV="Refresh" content="0; URL=http:tutorial.php"> ';     
+        echo' <META HTTP-EQUIV="Refresh" content="0; URL=http:tutorial.html"> ';     
         exit();
        }
 
@@ -57,11 +57,8 @@ So government created a special military division with the task of purify these 
 <br />
 They were called Aliens Hunter.
 </p>
-<br />
-<br />
-<br />
 <input type="submit" style="width:200px; height:400px;" name="easy" value="EASY" >
-<input type="submit" style="width:200px; height:400px;" name="mediaum" value="MEDIUM" >
+<input type="submit" style="width:200px; height:400px;" name="medium" value="MEDIUM" >
 <input type="submit" style="width:200px; height:400px;" name="hard" value="HARD" >
 <br />
 <input type="submit" style="width:200px;" name="tutorial" value="TUTORIAL" >
