@@ -14,40 +14,40 @@
 
 <p id="time" align="center"></p>
 <p id="ris" align="center"></p>
-
 <script>
 
 
-var map = [ // 1  2  3  4  5  6  7  8  9 10 11 12 13 14 
-          		 [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,], // 0
-           		[1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1,], // 1
-           		[1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1,], // 2
-         	    [1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1,], // 3
-        	    [1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1,], // 4
-           		[1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1,], // 5
-           		[1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1,], // 6
-           		[1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1,], // 7
-           		[1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1,], // 8
-           		[1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1,], // 9
-          	    [1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1,], // 10
-           		[1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1,], //11
-           		[1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1,], // 12
-           		[1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1,], // 13
-           		[1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1,], // 14
-           		[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,], // 
+var map = [ // 0  1  2  3  4  5  6  7  8  9 10 11 12 13 14 15 16 17
+          		[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,], // 0
+           		[1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1,], // 1
+           		[1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1,], // 2
+         	    [1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1,], // 3
+        	    [1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1,], // 4
+           		[1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1,], // 5
+           		[1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1,], // 6
+           		[1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1,], // 7
+           		[1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1,], // 8
+           		[1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1,], // 9
+          	    [1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1,], // 10
+           		[1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1,], //11
+           		[1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1,], // 12
+           		[1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1,], // 13
+           		[1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1,], // 14
+				[1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1,], // 15
+				[1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1,], // 16
+           		[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, ], //17
            ], mapW = map.length, mapH = map[0].length;
- 
+
  	var pun = 0;
-    var tempo = 10;  
-    // costanti, da rivedere          
+  var tempo = 10;
   var	UNITSIZE = 20,
 	MOVESPEED = 300,
 	LOOKSPEED = 1,
 	BULLETMOVESPEED = MOVESPEED * 5,
 	NUMAI = 100,
-	DURATIONTIME=20000; //in millisec       
-           
-var t = THREE,renderer, clock, projector, model, skin;
+	DURATIONTIME=92000; //in millisec
+
+  var t = THREE,renderer, clock, projector, model, skin;
 
     var renderer	= new THREE.WebGLRenderer
     ({
@@ -70,12 +70,6 @@ var t = THREE,renderer, clock, projector, model, skin;
 	//////////////////////////////////////////////////////////////////////////////////
 
 	var proceduralCity = new THREEx.ProceduralCity()
-	// var building= proceduralCity.getBuilding().clone()
-	// proceduralCity.scaleBuilding(building)
-	// proceduralCity.colorifyBuilding(building)
-	// scene.add(building)
-
-	// var mesh	= proceduralCity.createMrDoobCity()
 	var mesh	= proceduralCity.createSquareCity()
 	scene.add(mesh)
 
@@ -98,7 +92,7 @@ var t = THREE,renderer, clock, projector, model, skin;
 	var geometry = new THREE.CylinderGeometry( 5, 5, 20, 32 );
 	var material = new THREE.MeshBasicMaterial( {map: texture, color:0x835C3B} );
     var cylinder = new THREE.Mesh( geometry, material );
-	
+
 	cylinder.position.set(2, 1.3, 10);
 	cylinder.scale.set(3.5, 2, 4);
     scene.add( cylinder );
@@ -108,12 +102,12 @@ var t = THREE,renderer, clock, projector, model, skin;
 	var geometry_weapon = new THREE.CylinderGeometry(  5, 5, 20, 32 );
 	var material_weapon = new THREE.MeshBasicMaterial( {map: texture_weapon, color:0xffffff} );
 	var cylinder_weapon = new THREE.Mesh( geometry_weapon, material_weapon );
-	
+
 	cylinder_weapon.scale.set(0.05, 0.1, 0.05);
     cylinder_weapon.rotation.set(29.8, 0, 0);
     camera.add(cylinder_weapon);
     cylinder_weapon.position.set(0.7 ,-0.3, -1);
- 
+
 
     // bullets
     var bullets = [];
@@ -130,11 +124,6 @@ var t = THREE,renderer, clock, projector, model, skin;
 	//		Camera Controls							//
 	//////////////////////////////////////////////////////////////////////////////////
 
-	// updateFcts.push(function(delta, now){
-	// 	camera.position.x += (mouse.x*30 - camera.position.x) * (delta*3)
-	// 	camera.position.y += (mouse.y*30 - (camera.position.y)) * (delta*3)
-	// 	camera.lookAt( scene.position )
-	// })
     camera.position.y = 1.85;
 	camera.position.z = 200;
 
@@ -155,12 +144,12 @@ var date = new Date().getTime();
 var countDownDate = date + DURATIONTIME;
 
 // Update the count down every 1 second
-var x = setInterval(function() 
+var x = setInterval(function()
 {
 tempo -=1;
   // Get the "now" date
   var now1 = new Date().getTime();
-  
+
   // Find the distance between now an the count down date
   var distance = countDownDate - now1;
 
@@ -168,7 +157,7 @@ var sec = Math.floor(distance/1000);
 document.getElementById("time").innerHTML = "<span style='font-family: Impact; font-size: 15px; color:#00FF00'>  Remaining time: " + sec +" sec"+"&nbsp&nbsp&nbsp Punteggio: "+pun+"</span>";
 
 
-  // If the count down is finished, write some text 
+  // If the count down is finished, write some text
   if (distance < 0) {
     clearInterval(x);
     document.getElementById("time").innerHTML = "<br /><span style='font-family: Impact; font-size: 60px; color:#00FF00'>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <h1>TIME OUT!</h1></span>";
@@ -183,18 +172,18 @@ document.getElementById("time").innerHTML = "<span style='font-family: Impact; f
 	//////////////////////////////////////////////////////////////////////////////////
 	updateFcts.push(function()
 	{
-	
-	
+
+
 	pun =NUMAI - ai.length;
-	
+
 	var delta = clock.getDelta(), speed = delta * BULLETMOVESPEED;
 	var aispeed = delta * MOVESPEED *0.1;
     var time = Date.now() * 0.0005;
     renderer.render( scene, camera );
     controls.update(clock.getDelta());
     castRays();
-    
-    
+
+
             // SHOOT BULLET
                     for(var index=0; index<bullets.length; index+=1){
                     if( bullets[index] === undefined ) continue;
@@ -214,22 +203,24 @@ document.getElementById("time").innerHTML = "<span style='font-family: Impact; f
                                                 new THREE.MeshBasicMaterial({color:0x42FFFF})
                                                 );
                     // position the bullet to come from the player's weapon
-                    bullet.position.set(
+                 /*   bullet.position.set(
                                         camera.position.x - 0.7*parseInt(-Math.cos(camera.rotation.z)),
                                         camera.position.y - 0.3,
                                         camera.position.z +1*parseInt(-Math.cos(camera.rotation.z))
                                         );
-
+				*/
+				bullet.position.set(
+                                       camera.position.x - 0.7*parseInt(-Math.cos(camera.rotation.x)),
+                                        camera.position.y - 0.3,
+                                        camera.position.z
+                                        );
+				
                     // set the velocity of the bullet
                     bullet.velocity = new THREE.Vector3(
-                                                       (-mouse.x - Math.sin(camera.rotation.y) * 0.75),//*parseInt(-Math.cos(camera.rotation.z)) ,
+                                                       ((mouse.x*parseInt(Math.cos(camera.rotation.z))) - Math.sin(camera.rotation.y) * 0.75),//*parseInt(-Math.cos(camera.rotation.z)) ,
                                                         mouse.y,
                                                         Math.cos(camera.rotation.y)*parseInt(-Math.cos(camera.rotation.z))
 																											).normalize();
-                    //	console.info(bullet.velocity);
-                    // after 1000ms, set alive to false and remove from scene
-                    // setting alive to false flags our update code to remove
-                    // the bullet from the bullets array
                     bullet.alive = true;
                     setTimeout(function(){
                                bullet.alive = false;
@@ -238,31 +229,28 @@ document.getElementById("time").innerHTML = "<span style='font-family: Impact; f
                     // add to scene, array, and set the delay to 10 frames
                     bullets.push(bullet);
                     scene.add(bullet);
-                    canShoot = 10;                  
+                    canShoot = 10;
                     }
                     if(canShoot > 0) canShoot -= 1;
 
   //  console.info(" Punteggio2: "+pun);
-    
+
 // COLLIDE WITH AI
-for (var i = bullets.length-1; i >= 0; i--) 
+for (var i = bullets.length-1; i >= 0; i--)
 	{
 		var b = bullets[i], p = b.position;
 		//var hit = false;
-		for (var j = ai.length-1; j >= 0; j--) 
+		for (var j = ai.length-1; j >= 0; j--)
 		{
 			var a = ai[j];
 			var v = a.geometry.vertices[0];
 			var c = a.position;
-			//var z = Math.abs(v.z);
-			//var x = Math.abs(v.x);
-			
+
 			console.info(" V vale: "+ v);
 			console.info("P.x vale: "+ p.x + " C.x vale: " + c.x + " P.z vale: " +p.z + " C.z vale: "+c.z);
 			console.info(" Punteggio: "+pun);
 					console.info(" ai e' lungo: "+ ai.length);
-			//console.log(Math.round(p.x), Math.round(p.z), c.x, c.z, x, z);
-			if (p.x <= c.x + 2 && p.x >= c.x - 2 && p.z <= c.z + 2 && p.z >= c.z - 2) 
+						if (p.x <= c.x + 2 && p.x >= c.x - 2 && p.z <= c.z + 2 && p.z >= c.z - 2)
 			{
 					var texture_hit1 = THREE.ImageUtils.loadTexture( 'spento.png' );
                     var material_hit1 = new THREE.MeshBasicMaterial( {map: texture_hit1, color:0xffffff} );
@@ -272,7 +260,7 @@ for (var i = bullets.length-1; i >= 0; i--)
                     hit1.position.y = c.y;
                     hit1.position.z = c.z;
                     scene.add(hit1);
-                  var y = setInterval(function() 
+                  var y = setInterval(function()
                  {
             	  scene.remove(hit1);
                	}, 500);
@@ -281,13 +269,13 @@ for (var i = bullets.length-1; i >= 0; i--)
 				bullets.splice(i,1);
 				scene.remove(b);
 				break;
-				
+
 			}
 		}
 	}
 
 // Update AI.
-	for (var i = ai.length-1; i >= 0; i--) 
+	for (var i = ai.length-1; i >= 0; i--)
 	{
 		var a = ai[i];
 		// Move AI
@@ -310,14 +298,14 @@ for (var i = bullets.length-1; i >= 0; i--)
 			scene.remove(a);
 			addAI();
 		}
-		
+
 		var cc = getMapSector(camera.position);
 	}
 	})
-	
+
 
 	    // enemies
-    
+
 	var geometry_enemy1 = new THREE.CubeGeometry(5,4,5);
 	function setupAI()
 	{
@@ -328,18 +316,18 @@ for (var i = bullets.length-1; i >= 0; i--)
 	}
 
 
-function addAI() 
+function addAI()
 {
 	var c = getMapSector(camera.position);
 	var texture_enemy1 = THREE.ImageUtils.loadTexture( 'Enemy.jpg' );
 	var material_enemy1 = new THREE.MeshBasicMaterial( {map: texture_enemy1, color:0xffffff} );
 	var enemy1 = new THREE.Mesh( geometry_enemy1, material_enemy1 );
 
-	do 
+	do
 	{
 		var x = getRandBetween(0, mapW-1);
 		var z = getRandBetween(0, mapH-1);
-	} 
+	}
 	while (map[x][z] > 0 || (x == c.x && z == c.z));
 	x = Math.floor(x - mapW/2) * UNITSIZE;
 	z = Math.floor(z - mapW/2) * UNITSIZE;
@@ -351,7 +339,7 @@ function addAI()
 	scene.add(enemy1);
 }
 
-function getAIpath(a) 
+function getAIpath(a)
 {
 	var p = getMapSector(a.position);
 	do { // Cop-out
@@ -365,7 +353,7 @@ function getAIpath(a)
 }
 
 
-function findAIpath(sX, sZ, eX, eZ) 
+function findAIpath(sX, sZ, eX, eZ)
 {
 	var backupGrid = grid.clone();
 	var path = finder.findPath(sX, sZ, eX, eZ, grid);
@@ -373,24 +361,24 @@ function findAIpath(sX, sZ, eX, eZ)
 	return path;
 }
 
-function distance(x1, y1, x2, y2) 
+function distance(x1, y1, x2, y2)
 {
 	return Math.sqrt((x2-x1)*(x2-x1)+(y2-y1)*(y2-y1));
 }
 
-function getMapSector(v) 
+function getMapSector(v)
 {
 	var x = Math.floor((v.x + UNITSIZE / 2) / UNITSIZE + mapW/2);
 	var z = Math.floor((v.z + UNITSIZE / 2) / UNITSIZE + mapW/2);
 	return {x: x, z: z};
 }
 
-function getRandBetween(lo, hi) 
+function getRandBetween(lo, hi)
 {
  return parseInt(Math.floor(Math.random()*(hi-lo+1))+lo, 10);
 }
 
-	
+
 
 	//////////////////////////////////////////////////////////////////////////////////
 	//		loop runner							//
@@ -403,7 +391,7 @@ function getRandBetween(lo, hi)
 		lastTimeMsec	= lastTimeMsec || nowMsec-1000/60
 		var deltaMsec	= Math.min(200, nowMsec - lastTimeMsec)
 		lastTimeMsec	= nowMsec
-		
+
 		                  function keyDown(event)
 		                  {
                           keyboard[event.keyCode] = true;
@@ -430,7 +418,7 @@ function getRandBetween(lo, hi)
 
 
 
-    function castRays() 
+    function castRays()
     {
             // rays
 
@@ -440,7 +428,7 @@ function getRandBetween(lo, hi)
             var ray = new THREE.Raycaster(startPoint, directionVector.clone(). normalize());
             scene.updateMatrixWorld();		 // required, since you haven't rendered yet
             var rayIntersects = ray.intersectObjects(scene.children, true);
-            if (rayIntersects.length > 0) 
+            if (rayIntersects.length > 0)
             {
                                  camera.position.z = camera.position.z - 5;
 								 camera.position.x = camera.position.x - 5;
@@ -449,7 +437,7 @@ function getRandBetween(lo, hi)
 
 		}
 
-					function onDocumentMouseMove(e) 
+					function onDocumentMouseMove(e)
 					{
 						e.preventDefault();
 						mouse.x = (e.clientX / window.innerWidth) * 2 - 1;
