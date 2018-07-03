@@ -8,4 +8,5 @@ The game includes also 3 degrees of difficulty: the greater the difficulty the l
 
 Demo link: https://marcoschaerfcourses.github.io/Black-Entity/
 
+Project realized by: Luigi Zollo, Riccardo Grasselli, Federico Giulianelli.
 
